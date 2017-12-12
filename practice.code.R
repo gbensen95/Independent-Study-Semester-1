@@ -79,20 +79,21 @@ parent.nuc = data.set.2[,5]
 #best nuclei are those that track child 1 all the way through each frame correctly
 #by correctly i mean child 1 of the next frame is the closest child to position of child 1
 #in the old frame
-num = num.nuc.frame(4)
-best.nucs = c()
-for(i in 1:num)
-{
-  a = tracking.spots.algorithm(i,4,4,23,15)
-  b = which(a == 1)
-  if((length(a) == length(b)) & length(a) >= 1)
-  {
-    best.nucs = c(best.nucs, i)
-  }
-}
+#num = num.nuc.frame(4)
+#best.nucs = c()
+#for(i in 1:num)
+#{
+#  a = tracking.spots.algorithm(i,4,4,23,15)
+#  b = which(a == 1)
+#  if((length(a) == length(b)) & length(a) >= 1)
+#  {
+#    best.nucs = c(best.nucs, i)
+#  }
+#}
 
 #now, let's test the plotting function out to plot these best nuclei 
-for(i in best.nucs)
-{
-  plot.spots(i,4,4,23,15)
-}
+#for(i in best.nucs)
+#{
+#  plot.spots(i,4,4,23,15)
+#}
+
